@@ -13,7 +13,7 @@ Używane formaty:
 Skrypty:
 - clustering_jakdojade - ładuje pliki z danym z jakdojade, tworzy klastry i zlicza połączenia między nimi. Generuje trzy pliki w formacie WKT: centers.csv (centra klastrów), points.csv (punkty przypisane do klastrów), lines.csv (połączenia między klastrami); nazwa pliku wejściowego w linii 80 ;), dzielnikiem w linii 18 regulujemy średnią wielkość klastra
 
-Używamy układu współrzędnych ETRS89 / Poland CS2000 zone 6 (na Śląsku i Zagłębiu; inne strefy: https://pl.wikipedia.org/wiki/Uk%C5%82ad_wsp%C3%B3%C5%82rz%C4%99dnych_2000). Ustawiamy go we właściwościach projektu. Tam też włączamy reprojekcję w locie. Współrzedne geograficzne długość/szerokość to układ WGS84 (EPSG:4236). Pamiętajmy o tym ładując inne warstwy.
+Używamy układu współrzędnych ETRS89 / Poland CS2000 zone 6 (na Śląsku i Zagłębiu; inne strefy: https://pl.wikipedia.org/wiki/Uk%C5%82ad_wsp%C3%B3%C5%82rz%C4%99dnych_2000). Ustawiamy go we właściwościach projektu. Tam też włączamy reprojekcję w locie. Współrzedne geograficzne długość/szerokość to układ WGS84 (EPSG:4326). Pamiętajmy o tym ładując inne warstwy.
 
 Po załadowaniu warstwy do QGIS z pliku innego niż shp, bądź za pomocą wtyczki QuickOSM, należy warstwę od razu zapisać do formatu ESRI Shapefile (shp; prawy przyscik na warstwie -> Zapisz jako...), pamiętając o zmianie układu współrzędnych. Dodawanie warstwy WKT do projektu QGIS: Warstwa -> Dodaj warstwę -> Dodaj warstwę tekstową CSV.
 
